@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="name_task">Name Task</string>
+    <string name="time">HH:mm ??</string>
+    <string name="select_the_category">Select the category</string>
+
+    <array name="task_icon">
+        <item>gym_64</item>
+        <item>running_64</item>
+        <item>basketball_64</item>
+        <item>soccer_64</item>
+        <item>tennis_64</item>
+        <item>yoga_64</item>
+        <item>homework_64</item>
+        <item>watching_64</item>
+        <item>washing_64</item>
+        <item>iron_64</item>
+        <item>washing_dishes_64</item>
+        <item>cooking_64</item>
+        <item>vacuum_cleaner_64</item>
+        <item>garbage_64</item>
+        <item>meeting_64</item>
+        <item>working_64</item>
+        <item>shopping_64</item>
+        <item>cinema_64</item>
+        <item>park_64</item>
+        <item>user_64</item>
+        <item>exam_64</item>
+        <item>learning_64</item>
+        <item>chemical_64</item>
+    </array>
+
+    <array name="sport_icon">
+        <item>gym_64</item>
+        <item>running_64</item>
+        <item>basketball_64</item>
+        <item>soccer_64</item>
+        <item>tennis_64</item>
+        <item>yoga_64</item>
+    </array>
+
+    <array name="home_icon">
+        <item>homework_64</item>
+        <item>watching_64</item>
+        <item>washing_64</item>
+        <item>iron_64</item>
+        <item>washing_dishes_64</item>
+        <item>cooking_64</item>
+        <item>vacuum_cleaner_64</item>
+        <item>garbage_64</item>
+    </array>
+
+    <array name="work_icon">
+        <item>meeting_64</item>
+        <item>working_64</item>
+    </array>
+
+    <array name="entertainment_item">
+        <item>shopping_64</item>
+        <item>cinema_64</item>
+        <item>park_64</item>
+    </array>
+
+    <array name="other_item">
+        <item>user_64</item>
+    </array>
+
+    <array name="study_item">
+        <item>exam_64</item>
+        <item>learning_64</item>
+        <item>chemical_64</item>
+    </array>
+</resources>

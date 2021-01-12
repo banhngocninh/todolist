@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/myAddToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_spinner"
+            android:prompt="@string/select_the_category"
+            android:spinnerMode="dialog" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <ViewFlipper
+                android:id="@+id/viewFlipperImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background_icon_and_button" />
+
+
+            <ImageButton
+                android:id="@+id/imgBtnPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/viewFlipperImage"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:src="@drawable/previous_64" />
+
+            <ImageButton
+                android:id="@+id/imgBtnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/viewFlipperImage"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:src="@drawable/next_64" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtNameTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:hint="@string/name_task"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_background"
+            android:drawableRight="@drawable/calendar_24"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/time" />
+
+        <RatingBar
+            android:id="@+id/ratingTask"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:numStars="5"
+            android:progressDrawable="@drawable/custom_rating_bar"
+            android:stepSize="1" />
+
+    </LinearLayout>
+</ScrollView>
+
