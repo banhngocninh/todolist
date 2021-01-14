@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search_24"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/add_24"
+        android:title="Add"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_sort"
+        android:title="Sort"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/sort_name_AZ"
+                android:title="Sort Name (A-Z)" />
+            <item
+                android:id="@+id/sort_name_ZA"
+                android:title="Sort Name (Z-A)" />
+            <item
+                android:id="@+id/sort_rating_ASC"
+                android:title="Sort Rating (ASC)" />
+
+            <item
+                android:id="@+id/sort_rating_DESC"
+                android:title="Sort Rating (DESC)" />
+        </menu>
+
+    </item>
+
+</menu>
